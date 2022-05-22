@@ -12,7 +12,7 @@ from m8n.config import BOT_NAME
 
 
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(command("lodaa") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{START_PIC}",
@@ -40,7 +40,7 @@ Use the given buttons for more 📍""",
     )
 
 
-@Client.on_message(command(["start"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["lodaa"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{START_PIC}",
